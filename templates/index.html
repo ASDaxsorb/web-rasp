@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Raspberry Robot</title>
+  </head>
+  <body>
+    <h1>RobotRaspBerry</h1>
+    <div id="recorder">
+      <button id="record">Grabar</button>
+      <button id="stop">Detener</button>
+      <a id="download"></a>
+      <script
+        type="text/javascript"
+        src="{{ url_for('static', filename='recorder.js') }}"
+      ></script>
+    </div>
+    <img id="video" src="{{ url_for('video_viewer') }}" />
+  </body>
+</html>
